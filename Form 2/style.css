@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* ////////////////////////////// */
+    --title-text-color: white;
+    --title-background-color: #ED0677;
+    --h4-color: #183D8C;
+    --text-color: white;
+    --text-color-2: #888888;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    width: 1000px;
+    height: 1400px;
+    position: relative;
+    top: 20px;
+}
+header {
+    height: 30px;
+    background-color: var(--title-background-color);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--title-text-color);
+
+    border-radius: 10px;
+}
+h4 {
+    margin-top: 20px;
+    color: var(--h4-color);
+    margin-left: 30px;
+}
+
+#p-title {
+    margin-top: 20px;
+    margin-left: 30px;
+    color: var(--title-background-color);
+} 
+
+fieldset {
+    border-color: var(--h4-color);
+    width: 940px;
+    position: relative;
+    left: 30px;
+}
+legend {
+    margin-left: 20px;
+    color: var(--h4-color);
+    font-weight: bold;
+}
+#shop-info label {
+    margin-left: 80px;
+}
+#shop-info select {
+    height: 30px;
+    width: 320px;
+}
+#shop-info p {
+    color: var(--title-background-color);
+    margin-left: 80px;
+    margin-right: 60px;
+}
+/* ////////////////thông tin khách hàng//////////// */
+#information-table-left {
+    width: 45%;
+
+    position: relative;
+    left: 60px;
+
+}
+#input-td input {
+    height: 30px;
+    width: 85%;
+    position: relative;
+    left: 30px;
+}
+#input-td label {
+    position: relative;
+    top: -9px;
+}
+#input-td select {
+    width: 85%;
+    height: 30px;
+    position: relative;
+    left: 30px;
+}
+
+#information-fieldset {
+    display: flex;
+    flex-direction: row;
+}
+
+#information-table-right {
+    width: 45%;
+    position: relative;
+    left: 90px;
+}
+#information-table-right tr {
+    height: 30px;
+    position: relative;
+    top: 2px;
+}
+#information-table-right tr td input {
+    height: 30px;
+    width: 230px;
+}
+#information-table-right tr td select {
+    height: 30px;
+    width: 230px;
+}
+
+#tr-code-1 td {
+    position: relative;
+    top: 18px;
+}
+#tr-code-2 td {
+    position: relative;
+    top: 10px;
+}
+
+.birdthday {
+    display: flex;
+    flex-direction: row;
+}
+.bridthday select{
+    width: 66px !important;
+    margin-right: 10px;
+}
+
+#gender-tr td {
+    position: relative;
+    top: 5px;
+}
+/* ////////////////tell-information//////////////// */
+#tell-infor {
+    position: relative;
+    left: 55px;
+}
+#tell-infor tr td input {
+    height: 30px;
+    width: 350px;
+}
+#tell-infor tr td select {
+    height: 30px;
+    width: 350px;
+}
+#quan-huyen-select {
+    color: var(--text-color-2);
+}
+#phuong-xa-select {
+    color: var(--text-color-2);
+}
+
+
+/* //////////pass-table/////////// */
+#pass-table {
+    position: relative;
+    left: 59px;
+}
+#pass-table tr td input {
+    position: relative;
+    left: 14px;
+
+    height: 30px;
+    width: 250px;
+}
+/* ///////////submit-btn//////////// */
+footer {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+}
+#submit {
+    height: 30px;
+    width: 80px;
+    
+    background: rgb(27,59,255);
+    background: linear-gradient(0deg, rgba(27,59,255,1) 36%, rgba(47,58,255,0.742734593837535) 61%);
+
+    position: relative;
+
+    color: var(--text-color);
+}

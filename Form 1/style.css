@@ -1,0 +1,152 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    --label-name-color: darkgrey;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+caption {
+    text-align: left;
+}
+table {
+    border-top: 2px solid black;
+    position: relative;
+}
+th {
+    text-align: left;
+}
+
+#name-td {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 30px 20px;
+    position: relative;
+    top: 12px;
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+}
+#name-td label  {
+    color: var(--label-name-color);
+}
+
+#phone-number-td {
+    display: grid;
+    grid-template-columns: 80px 10px 200px;
+    grid-template-rows: 30px 20px;
+    position: relative;
+    top: 12px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+#phone-number-td label {
+    color: var(--label-name-color);
+    font-size: 15px;
+}
+
+#female {
+    margin-left: 150px;
+}
+
+#address-td {
+    display: flex;
+    flex-direction: column;
+}
+#address-td label {
+    color: var(--label-name-color);
+    position: relative;
+    top: 5px;
+}
+#address-td input {
+    height: 25px;
+} 
+
+#address-grid-td {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 25px 25px;
+    grid-column-gap: 10px;
+}
+#address-grid-td  label {
+    color: var(--label-name-color);
+    position: relative;
+    top: 10px;
+}
+#address-grid-td input {
+    height: 25px;
+}
+
+#dance-td {
+    display: flex;
+    flex-direction: column;
+}
+
+#dance-td span {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+#date-time-td {
+    display: grid;
+    grid-template-columns: 60px 10px 60px 10px 80px 50px 60px 10px 60px 60px;
+    grid-template-rows: 35px 35px;
+    grid-column-gap: 5px;
+    position: relative;
+    top: 20px;
+}
+#date-time-td input {
+    font-weight: bold;
+}
+#date-time-td select {
+    font-weight: bold;
+}
+#date-time-td label {
+    color: var(--label-name-color);
+    position: relative;
+    top: 2px;
+}
+
+
+#dash-p {
+    font-size: 30px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#submit-btn {
+    height: 35px;
+    width: 70px;
+    position: relative;
+    left: 45%;
+}
+
+
+#calender-i {
+    width: 34px;
+    border: none;
+    position: relative;
+    left: 10px;
+}
+
+input[type=datetime-local]::-webkit-datetime-edit-text.day-field {
+    display: none;
+}
+
+input[type=datetime-local]::-webkit-calendar-picker-indicator {
+    background: url('icon/calendar.png') no-repeat;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+}
+
+
+#dot-p {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: -14px;
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nguyễn Hoàng Nam - A23030</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <table width="800px" cellspacing="20">
+            <caption>
+                <h1>Dance Registration</h1>
+                <p style="font-size: 18px;">Fill the registration form below keenly to enter the dancing competition.</p>
+            </caption>
+            <tr>
+                <th>Name</th>
+                <td id="name-td">
+                    <input type="text" id="first-name" name="first-name" required> 
+                    <input type="text" id="last-name" name="last-name" required>
+                    <label for="first-name" id="first-name-label">First Name</label>
+                    <label for="first-name" id="last-name-label">Last Name</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>
+                    <input type="email" name="email" id="" style="width: 300px; height: 30px;" required placeholder="ex: myname@example.com">
+                </td>
+            </tr>
+            <tr>
+                <th>Phone Number</th>
+                <td id="phone-number-td">
+                    <input type="number" id="area-code" style="width: 70px; height: 30px;" name="area-code" required>
+                    <p id="dash-p">-</p>
+                    <input type="tel" name="tell" id="phone-number" style="height: 30px;" required>
+                    <label for="area-code">Area Code</label>
+                    <p></p>
+                    <label for="phone-number">phone Number</label>
+                </td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td id="gender-td">
+                    <input type="radio" name="gender" id="male" value="male" required>
+                    <label for="male"><strong>Male</strong></label>
+                    <input type="radio" name="gender" id="female" value="female" required>
+                    <label for="female"><strong>Female</strong></label>
+                </td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td id="address-td" style="position: relative; top: 10px;">
+                    <input type="text" name="stress" id="street-adress" style="width: 400px;" required>
+                    <label for="street-adress">Street Address</label>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td id="address-td">
+                    <input type="text" name="stress-line-2" id="street-adress-line-2" style="width: 400px;" required>
+                    <label for="street-adress-line-2">Street Address line 2</label>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td id="address-grid-td">
+                    <input type="text" name="city" id="city" style="width: 190px;" required>
+                    <input type="text" name="state" id="state" style="width: 190px;" required>
+                    <label for="city">City</label>
+                    <label for="state">State/Province</label>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td id="address-grid-td" style="position: relative; top: -10px;">
+                    <input type="text" name="zip-code" id="zip-code" required>
+                    <select name="country" id="country" style="height: 32px;">
+                        <option value="">Please select</option>
+                        <option value="VietNam">Việt Nam</option>
+                        <option value="Usa">Mỹ</option>
+                        <option value="Thailand">Thái Lan</option>
+                    </select>
+                    <label for="zip-code">Postal/Zip code</label>
+                    <label for="country">Country</label>
+                </td>
+            </tr>  
+            <tr style="position: relative;">
+                <td><strong style="position: absolute; top: 5px;">Type of Dance</strong></td>
+                <td id="dance-td">
+                    <span>
+                        <input type="radio" name="dance" required>
+                        <label for="dance-salsa">Salsa</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="dance">
+                        <label for="dance-bachata">Bachata</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="dance">
+                        <label for="dance-tango">Tango</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="dance">
+                        <label for="dance-hip-hop">Hip Hop</label>
+                    </span>
+                    <span>
+                        <input type="radio" name="dance">
+                        <label for="dance-club">Club</label>
+                    </span>
+                    <SPan>
+                        <input type="radio" name="dance">
+                        <input type="text" name="dance-other" style="width: 100px;" placeholder="Other">
+                    </SPan>
+                </td>
+            </tr>
+            <tr>
+                <th>Start Day & Time</th>
+                <td id="date-time-td">
+                    <input type="number" name="month" min="1" max="12" value="10" id="month" required>
+                    <p id="dash-p">-</p>
+                    <input type="number" name="day" min="1" max="31" value="26" id="day" required>
+                    <p id="dash-p">-</p>
+                    <input type="number" name="year" min="2000" value="2020" id="year" required>
+                    <span id="iconDate">
+                        <input type="datetime-local" name="" id="calender-i" onchange="changeDate()">
+                    </span>
+                    <select name="hour" id="hour">
+                        <option value="0">00</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                        <option value="5">05</option>
+                        <option value="6">06</option>
+                        <option value="7">07</option>
+                        <option value="8">08</option>
+                        <option value="9">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                    <p id="dot-p">:</p>
+                    <select name="minuets" id="minutes">
+                        <option value="00">00</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                        <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                        <option value="54">54</option>
+                        <option value="55">55</option>
+                        <option value="56">56</option>
+                        <option value="57">57</option>
+                        <option value="58">58</option>
+                        <option value="59">59</option>
+                        <option value="60">60</option>
+                    </select>
+                    <select name="am/pm" id="am/pm">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                    <label for="month">Month</label>
+                    <span></span>
+                    <label for="day">Day</label>
+                    <span></span>
+                    <label for="year">Year</label>
+                    <span></span>
+                    <label for="">Hour</label>
+                    <span></span>
+                    <label for="">Minutes</label>
+                </td>
+            </tr>
+            <tr style="position: relative;">
+                <td><strong style="position: absolute; top: 0px;">Comment</strong></td>
+                <td>
+                    <textarea name="comment" id="comment" cols="60" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Submit" name="submit-btn" id="submit-btn">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+ 
+
+    <script src="index.js"></script>
+</body>
+</html>
